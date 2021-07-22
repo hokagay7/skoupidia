@@ -1,0 +1,102 @@
+.title {
+  font-family: monospace;
+  font-size:28px;
+  color: #d47f68;
+}
+.intro {
+  font-family: monospace;
+  font-size: 18px; 
+  color: white;
+  
+}
+
+body{
+    background-image: url('https://i.pinimg.com/originals/9c/8b/33/9c8b33f7348e1c07a4eb7025f69902da.gif');
+    background-repeat: repeat;
+    padding:0;
+    margin:0;
+}
+#titlebox {
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #12755e , #a69e12);
+  margin: 0 auto;
+  padding: 15px; 
+  width: 30%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#textbox {
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, #127531 , #a612a6);
+  margin: 0 auto; 
+  padding: 50px; 
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.button {
+  background-color: #C061CF;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  width: 15%;
+  text-align: center;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-animation: color-change 2s infinite;
+  -moz-animation: color-change 2s infinite;
+  -o-animation: color-change 2s infinite;
+  -ms-animation: color-change 2s infinite;
+  animation: color-change 2s infinite;
+  overflow: hidden; 
+}
+#audio1 {
+ width: 30px;
+  height: 30px;
+  background-image: url('https://www.freeiconspng.com/thumbs/sound-off-icon/sound-off-music-mute-off-sound-speaker-volume-icon-16.png');
+  background-size: cover;
+  background-color:#e39681;
+}
+@-webkit-keyframes color-change {
+    0% { color: red; }
+	25% { color: orange; }
+    50% { color: yellow; }
+	80% { color: green; }
+    90% { color: blue; }
+	100% { color: purple; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+	25% { color: orange; }
+    50% { color: yellow; }
+	80% { color: green; }
+    90% { color: blue; }
+	100% { color: purple; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+	25% { color: orange; }
+    50% { color: yellow; }
+	80% { color: green; }
+    90% { color: blue; }
+	100% { color: purple; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+	25% { color: orange; }
+    50% { color: yellow; }
+	80% { color: green; }
+    90% { color: blue; }
+	100% { color: purple; }
+}
+@keyframes color-change {
+    0% { color: red; }
+	25% { color: orange; }
+    50% { color: yellow; }
+	80% { color: green; }
+    90% { color: blue; }
+	100% { color: purple; }
+}
+

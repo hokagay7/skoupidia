@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title id="title"></title>
+<link rel="icon" href="img/S.png" type="image/icon type">
+<link rel="stylesheet" type="text/css" href="css/gui.css">
+<script src="js/console.js"></script>
+
+<body>
+<center>                         
+<p id="demo"></p>
+<p class="title" id="titlebox">Skoupidia</p>
+<p id="demo"></p>
+<p class="intro" id="textbox">Hi and Welcome to Skoupidia!<br><br>This website is for me to compIle all my Science Computer assigNment into a single webpage or Some sort of portfolio :P. Nothing advance have been coded. Everything are the same cliche high school assignment. You know, BMI calculator, average of number given.. that kind of stuff.<br><br>To be frank, I sPEnt a lot of my time on this stuff and when it come to Class presentation, it only goes for around 3-4 minutes. Not worth iT.<br>Therefore why this page exist. I don't want all my time wasted just like that.<br><br>-Danish ( ͡~ ͜ʖ ͡°)
+<br><br><br><br>
+<button id="audio1" onClick="playPause()" title="Love on a Roll - Guy Trevino and Friends">
+  <audio src="file/LOR.mp3"; autoplay></audio>
+</button>
+<span style="color: #e39681">👈 Hey you! Click that button please..</span>
+</p>
+<p id="demo"></p>
+
+
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modurl" onclick="popURL()">Projects</button>
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modsocial" onclick="popSocial()">Links</button>
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modother" onclick="popOther()">Others</button>
+
+<p id="demo"></p>
+
+
+</center>
+
+<!-- I don't know how to make it work on single script. Had to separate it -->
+<script>
+  var titles = ['Skoupidia', 'Garbage', 'Scrap', 'Debitage', 'Haha long title! U cant actually read this unless you view the page source. By the time you are reading this, its not worth it. [Btw u should check the console for some sort of a key]. U are wasting your time reading this. Cause U arent supposed to & cant see the rest'];
+  var title = titles[Math.floor(Math.random() * titles.length)] // pick random item
+  document.title = title
+</script>
+<script>
+var aud = document.getElementById("audio1").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
+
+</script>
+<script>
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>

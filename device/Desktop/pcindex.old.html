@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title id="title"></title>
+<link rel="icon" href="img/B.png" type="image/icon type">
+
+<link rel="stylesheet" type="text/css" href="css/gui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/console.js"></script>
+
+<body>
+<center>                         
+<p id="demo"></p>
+<p class="title" id="titlebox">Basebook</p>
+<p id="demo"></p>
+<p class="intro" id="textbox"><br><br><br>
+<button id="audio1" onClick="playPause()">
+  <audio src="file/dualipa.mp3"; autoplay></audio>
+</button>
+<span style="color: #e39681">👈 Hey you! Click that button please..</span>
+</p>
+<p id="demo"></p>
+<p class="targetdiv" style="display:none;" id="project"> THis is it the most shortest text you will ever find in this entire planet</p>
+<p class="targetdiv" style="display:none;" id="social"> THis is it the second most shortest text you will ever find in this entire planet</p>
+
+
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modurl" onclick="popURL()">Projects</button>
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modsocial" onclick="popSocial()">Links</button>
+<button style="font-size:18px; font-family: monospace;" class="button" href="javascript:void(0)" id="modother" onclick="popOther()">Others</button>
+
+<p id="demo"></p>
+
+
+</center>
+<script>
+$(function() {
+  $('.showSingle').click(function() {
+    $('.targetDiv').not('#div' + $(this).attr('target')).hide();
+    $('#div' + $(this).attr('target')).toggle();
+  });
+});
+</script>
+
+<script>
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+
+</html>

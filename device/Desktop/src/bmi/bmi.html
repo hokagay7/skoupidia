@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title> BMI Calc</title>
+</head>
+<center>
+<style>
+mark { 
+  background-color: cyan;
+  color: black;
+}
+
+body {
+  background-image: url('grad.jpg');
+}
+.submitbutton{
+  display:block;
+}
+</style>
+<body>
+<center>
+
+ <!-- Ini untuk html. Input dan button -->
+    <div class="container">
+        <p style="font-size:60px; color: Yellow">BMI Calculator</p>
+		
+        <p style="font-size:20px"><b><mark>‎‎Height in meter</mark></b></p>
+        <input type="text" id="height">
+  
+        <p style="font-size:20px"><b><mark>weight in kg</mark></b></p>
+        <input type="text" id="weight">
+  
+        <button onclick="kirabmi()" type="submit" class="submitbutton">Calculate</button>
+         
+        <p id="status" style="color:#25b053; font-size:20px">Status</p>
+		
+		<p style="font-size:22px; color:Red"><br><br>Had a problem where the input still accepting int number.<br>IT NOT SUPPOSED TO<br>Also don't want to change most of the code for the sake of memories.<br><br><br>I coded this an hour before the deadline. Yeah pretty simple code but not for me.</p>
+        
+
+    </div>
+
+
+	
+ <!-- Ini bahagian javascript nya boleh jugak kalau nk buat separate file -->
+<script src="process.js"></script>
+</center>
+</body>
+</html>
